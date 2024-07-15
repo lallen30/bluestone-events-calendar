@@ -1,0 +1,77 @@
+.calendar-month-year {
+  color: #337ab7;
+  font-size: 20px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+td {
+  border: 1px solid #ddd;
+  height: 100px;
+  vertical-align: top;
+  position: relative;
+  padding-top: 5px;
+  /* Add padding top */
+}
+
+table ul {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  padding-left: 4px;
+  right: 0;
+}
+
+table li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.day-of-month {
+  background-color: #eee;
+  padding: 2px;
+  width: 20px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  /* Make day-of-month position absolute */
+  top: 5px;
+  /* Adjust this value to position your day-of-month correctly */
+  left: 5px;
+}
+
+.day-of-month.current-date {
+  background-color: #428bca;
+  color: #ffffff;
+}
+
+.calendar-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+button {
+  background-color: #428bca;
+}
+
+.single-bs_calendar_event .fl-page-content {
+  padding: 20px;
+}
+
+.single-bs_calendar_event .my-custom-title {
+  font-size: 2em;
+  font-weight: bold;
+}
